@@ -175,7 +175,7 @@ const ListingDetails = () => {
                 </h2>
               )}
 
-              <h2>Total price: ${listing.price * dayCount}</h2>
+              <h2>Total price: ${(listing.price * dayCount)+0.18*(listing.price * dayCount)} <span style="font-size: small; font-weight: lighter;">GST included</span></h2>
               <p>Start Date: {dateRange[0].startDate.toDateString()}</p>
               <p>End Date: {dateRange[0].endDate.toDateString()}</p>
 
